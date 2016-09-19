@@ -9,8 +9,43 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        
+        <!-- JS -->
+        <script src="assets/album.js"></script>
+        <script src="js/song-list.js"></script>
+        
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="main_screen_container">
+            
+            <header>
+                <h1>MIMO Player</h1>
+            </header>
+            
+            <div id="player_container">
+                <img src="img/cover.jpg" alt="album">
+            </div>
+            
+            <div id="current_song_container">
+                <div class="containerSong">
+                    <span id="current_tittle" class="appfont">TITULO</span>
+                    <time id="current_time" class="timesong">3:34</time>
+                </div>
+            </div>
+            
+            <div class="swap_page_up">
+                
+            </div>
+            
+        </div>
+        
+        <div id="list_screen_container">
+            <div class="swap_page_down">
+                
+            </div>
+        </div>
     </body>
 </html>

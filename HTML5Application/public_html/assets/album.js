@@ -17,7 +17,7 @@ var album = {
 		{ "name": "Mar Adentro", "interpreter": "Bunbury / Valdivia / Andreu / Cardiel", "duration": 242 },
 		{ "name": "Más Alto Que Nosotros Sólo El Cielo", "interpreter": "Bunbury", "duration": 270 },
 		{ "name": "La Chispa Adecuada", "interpreter": "Bunbury / León Larregui", "duration": 292 },
-		{ "name": "200 Huesos Y Un Collar De Calaveras", "interpreter": "Bunbury", "duration": 320 },
+		{ "name": "200 Huesos Y Un Collar De Calaveras", "interpreter": "Bunbury", "duration": 320 }
 	]
 };
 

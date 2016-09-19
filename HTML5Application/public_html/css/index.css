@@ -1,0 +1,20 @@
+.swap_page_down {}
+.swap_page_up {}
+
+.containerSong {
+    height: 150px;
+    width: 100%;
+}
+.appfont {}
+.artistname {}
+.timesong {}
+
+#player_container {
+    align-content: center;
+    height: 50%;
+    width: 50%;
+}
+
+img {
+    max-width:100%;
+}
