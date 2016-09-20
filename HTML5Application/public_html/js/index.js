@@ -30,6 +30,7 @@ function swapCurrentSong(index) {
     document.querySelector("#current_time").textContent = calculateMinutes(album.songList[index].duration);
     
     currentTime = album.songList[index].duration;
+    songSelected = index;
 }
 
 function startTime() {
