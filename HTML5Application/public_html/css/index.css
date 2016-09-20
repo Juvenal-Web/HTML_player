@@ -9,10 +9,16 @@
 .artistname {}
 .timesong {}
 
+.center_container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 #player_container {
-    align-content: center;
     height: 50%;
     width: 50%;
+    border-radius: 50%;
 }
 
 img {

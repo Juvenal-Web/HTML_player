@@ -7,7 +7,7 @@
 function Create(callback) {
   var timeCounter = 0;
   return { 
-    checkCounter   : function(p) { timeCounter = p; callback(timeCounter); }
+    checkCounter: function(p) { timeCounter = p; callback(timeCounter); }
   };
 }
 
