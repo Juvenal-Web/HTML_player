@@ -5,19 +5,6 @@ var SONG_CLASSES = {
     timeClass: "timesong"
 }
 
-function calculateMinutes(duration) {
-    var timeSong = duration/60;
-    var sec = ((timeSong - timeSong.toFixed(0)) * 100).toFixed(0);
-    if(sec < 0) {
-        sec = (sec * -1) + "";
-    }
-    if(sec.length === 1) {
-        sec = "0" +sec; 
-    }
-    
-    return timeSong.toFixed(0) + ":" + sec;
-}
-
 function createSkeletoonSong(i) { 
     
     var spanTittleSong = document.createElement("span");
@@ -42,11 +29,6 @@ function createSkeletoonSong(i) {
     
     return customDiv;
    
-}
-
-function swapCurrentSong(index) {
-    document.querySelector("#current_tittle").textContent = album.songList[index].name;
-    document.querySelector("#current_time").textContent = calculateMinutes(album.songList[index].duration);
 }
 
 function addSongs() {
