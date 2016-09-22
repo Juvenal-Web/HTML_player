@@ -15,12 +15,42 @@
     text-align: center;
 }
 
-#player_container {
-    height: 50%;
-    width: 50%;
-    border-radius: 50%;
+.icon {
+    height: 40px;
+    width: 40px;
 }
 
-img {
+#rewind_forward {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#my_canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#main_screen_container {
+    height: 100%;
+}
+
+#player_container {
+    width: 100%;
+    position: relative;
+}
+
+#img_player {
+    padding: 10px;
+}
+
+#img_player img {
+    border-radius: 50%;
+    
     max-width:100%;
 }
+
+
+body, html {height: 100%; }

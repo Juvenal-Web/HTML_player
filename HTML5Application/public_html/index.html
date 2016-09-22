@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Player MIMO</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -31,7 +31,17 @@ and open the template in the editor.
                 </header>
 
                 <div id="player_container" class="center_container">
-                    <img src="img/cover.jpg" alt="album">
+                    <div id="running_song_container">
+                        <div id="img_player">
+                            <img class="center_container" src="img/cover.jpg" alt="album">
+                        </div>
+                        <canvas id="my_canvas" class="center_container" width="500" height="500" style="border:1px dashed #CCC;"></canvas>
+                    </div>
+                    <div id="helper_player">
+                        <img id="play" class="icon" src="assets/play-button.svg" alt="play">
+                        <img id="rewind" class="icon" src="assets/rewind.svg" alt="rewind">
+                        <img id="rewind_forward" class="icon" src="assets/rewind.svg" alt="rewindF">
+                    </div>
                 </div>
             </div>
             <div id="current_song_container">
