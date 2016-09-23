@@ -7,11 +7,11 @@ var SONG_CLASSES = {
 
 function createSkeletoonSong(i) { 
     
-    var spanTittleSong = document.createElement("span");
+    var spanTittleSong = document.createElement("p");
     spanTittleSong.classList.add(SONG_CLASSES.tittleClass);
     spanTittleSong.textContent = album.songList[i].name;
     
-    var spanArtistSong = document.createElement("span");
+    var spanArtistSong = document.createElement("p");
     spanArtistSong.classList.add("small");
     spanArtistSong.classList.add(SONG_CLASSES.artistClass);
     spanArtistSong.textContent = album.songList[i].interpreter;

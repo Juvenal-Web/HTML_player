@@ -28,6 +28,9 @@ var helperQueue = Create(function(counter) {
 });
 
 function swapCurrentSong(index) {
+    
+    document.querySelector("#list_screen_container").className = "move_down";
+    
     if(index < 0) {
         index = album.songList.length - 1;
     } 
@@ -65,8 +68,12 @@ function drawProgress(al){
     diff = ((al / 100) * Math.PI*2);
     ctx.clearRect(0, 0, cWidth, cHeigth);
     ctx.lineWidth = 5;
-    ctx.fillStyle = '#09F'; //blue
-    ctx.strokeStyle = "#09F";
+    ctx.fillStyle = '#000'; 
+    ctx.strokeStyle = "#37FDFC";
+    ctx.shadowColor = '#FFF';
+    ctx.shadowBlur = 5;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
     ctx.beginPath();
     ctx.arc(250, 250, 240, start-diff, start, true); // el booleano es para saber si va a favor de reloj o en contra
     ctx.stroke();
@@ -88,7 +95,9 @@ function playOrPause() {
     if(!playMode) {
             id = setInterval(startTime,1000);
             playMode = true;
+            document.querySelector("#play").className = "icon_font paused";
         } else {
+            document.querySelector("#play").className = "icon_font playing";
             clearInterval(id);
             playMode = false;
         }
@@ -104,5 +113,17 @@ window.addEventListener("load", function() {
     document.querySelector("#rewind").addEventListener("click", function() {
         songSelected--;
         swapCurrentSong(songSelected);
+    });
+    document.querySelector("#rewind_forward").addEventListener("click", function() {
+        songSelected++;
+        swapCurrentSong(songSelected);
+    });
+    
+    document.querySelector("#swap_page_up").addEventListener("click", function(){
+        document.querySelector("#list_screen_container").className = "move_up";
+    });
+    
+    document.querySelector("#swap_page_down").addEventListener("click", function(){
+        document.querySelector("#list_screen_container").className = "move_down";
     });
 });
